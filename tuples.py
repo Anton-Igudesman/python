@@ -24,4 +24,10 @@ print(protocol_dict)
 for key, value in protocol_dict.items():
    print(f"Protocol: {key}, Port: {value}")
 
+popped_protocol = protocol_dict.pop("LDAP", "value not present")
+print(popped_protocol)
+
+last_pop = protocol_dict.popitem()
+
+print(last_pop)
 
